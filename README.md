@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Ferry Terminal Challenge!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A company has bought a small ferry terminal, and two ferries are available at any one time.
 
-Currently, two official plugins are available:
+Ferry Types:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Small Ferry\*\*
 
-## Expanding the ESLint configuration
+A Small Ferry can hold 8 small vehicles
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#### Large Ferry\*
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+A Large Ferry can hold 6 Large vehicles
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Vehicle types
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Each car type costs a different amount to board a ferry.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+| Type     | Size    | Cost     |
+| -------- | ------- | -------- |
+| Car      | Small   |    $5.00 |
+| Van      | Small   |    $7.50 |
+| Truck	   | Large   |   $10.00 |
+| Bus      | Large   |   $15.00 |
+
+The Ferry worker earns 10% of the total ticket cost per day.
+
+## The Test
+
+The goal for this test is to build out the logic to assign these vehicles to the appropriate ferry and to handle when the ferry is full. In addition, you need to calculate **and display** the total amount of revenue for the terminal and the worker.
+
+For each vehicle that boards the ferry, calculate how much:
+
+- The terminal earns
+- The worker earns
+

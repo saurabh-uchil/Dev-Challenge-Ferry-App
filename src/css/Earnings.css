@@ -1,0 +1,14 @@
+.stats{
+    margin: 20px;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px){
+    .stats{
+        text-align: center;
+        margin: 10px 0px;
+    }
+}

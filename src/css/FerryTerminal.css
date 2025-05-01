@@ -1,0 +1,68 @@
+.intro{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.priceboard, .ferryInfo{
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.boatsTable{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.boatsTable img{
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+}
+.boatsTable h5{
+    text-align: left;
+}
+
+.btnDiv{
+    padding: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+.stats{
+    margin: 20px;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+}
+.spots{
+    margin-left: 100px;
+}
+.isFull{
+    color: rgb(221, 24, 24);
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .boatsTable{
+        display: block;
+    } 
+   
+    .stats{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .spots{
+        margin-left:auto;
+    }
+}
+
+@media only screen and (width: 768px){
+    .boatsTable{
+        display: block;
+    } 
+
+}
